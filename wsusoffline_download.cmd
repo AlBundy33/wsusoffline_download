@@ -20,8 +20,8 @@ SET DOWNLOAD_LOG=!LOG_DIR!\download.log
 
 SET LANGUAGES=enu fra esn jpn kor rus ptg ptb deu nld ita chs cht plk hun csy sve trk ell ara heb dan nor fin
 SET ALL=all all-x86 all-x64
-SET WIN_APPS=wxp w2k3 w2k3-x64
-SET OFC_APPS=o2k3 o2k7 o2k7-x64 o2k10
+SET WIN_APPS=w2k3 w2k3-x64
+SET OFC_APPS=o2k7 o2k7-x64 o2k10
 SET GLOBAL_WIN_APPS=w60 w60-x64 w61 w61-x64 w62 w62-x64 w63 w63-x64
 SET GLOBAL_OFC_APPS=ofc
 SET APPLICATIONS=!WIN_APPS! !OFC_APPS!
