@@ -203,8 +203,14 @@ GOTO :EOF
 					SET SECTION=w63
 				) ELSE IF /I "!LINE!"=="[Windows Server 2012 R2]" (
 					SET SECTION=w63-x64
+				) ELSE IF /I "!LINE!"=="[Windows 10]" (
+					SET SECTION=w100
+				) ELSE IF /I "!LINE!"=="[Windows Server 2016]" (
+					SET SECTION=w100_x64
 				) ELSE IF /I "!LINE!"=="[Office 2013]" (
 					SET SECTION=o2k13
+				) ELSE IF /I "!LINE!"=="[Office 2016]" (
+					SET SECTION=o2k16
 				) ELSE (
 					CALL :LOG_WARNING unknown section found: !LINE!
 					SET SECTION=!LINE:~1,-1!
@@ -430,15 +436,15 @@ GOTO :EOF
 	GOTO :EOF
 
 :LOG_ERROR
-	CALL :LOG - Error: %*
+	CALL :LOG [ERROR] %*
 	GOTO :EOF
 
 :LOG_INFO
-	CALL :LOG - Info: %*
+	CALL :LOG [INFO] %*
 	GOTO :EOF
 
 :LOG_WARNING
-	CALL :LOG - Warning: %*
+	CALL :LOG [WARNING] %*
 	GOTO :EOF
 
 :LOG_SEPARATOR
