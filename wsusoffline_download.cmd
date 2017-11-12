@@ -32,7 +32,7 @@ SET SCRIPT_GLOBAL_APPLICATIONS=!GLOBAL_WIN_APPS!
 :: =========================================================================================================================
 
 ECHO.%~nx0 by AlBundy
-ECHO.more information at: http://forums.wsusoffline.net/viewtopic.php?f=5^&t=436
+ECHO.more information at: https://github.com/AlBundy33/wsusoffline_download
 ECHO.
 
 IF NOT EXIST "!WSUS_DIR!\UpdateGenerator.exe" (
