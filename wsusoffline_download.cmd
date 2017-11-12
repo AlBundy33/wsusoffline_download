@@ -430,7 +430,7 @@ GOTO :EOF
 	GOTO :EOF
 
 :LOG
-	SET MSG=!DATE! !TIME: =0! %*
+	SET MSG=!DATE! !TIME: =0! - %~nx0 %*
 	ECHO.!MSG!
 	ECHO>>"!DOWNLOAD_LOG!" !MSG!
 	GOTO :EOF
